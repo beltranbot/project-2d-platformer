@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Platformer 2DProject"
+run/main_scene="uid://cqbsca3l6roi3"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
