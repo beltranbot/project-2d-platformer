@@ -4,6 +4,8 @@ extends CharacterBody2D
 var move_speed: float = 100.0
 var jump_force: float = 200.0
 var gravity: float = 500.0
+var score: int = 0
+
 
 func _physics_process(_delta: float) -> void:
 	if not is_on_floor():
@@ -27,3 +29,7 @@ func _physics_process(_delta: float) -> void:
 
 func game_over():
 	get_tree().call_deferred("reload_current_scene")
+
+
+func add_score(amount) -> void:
+	score += amount
